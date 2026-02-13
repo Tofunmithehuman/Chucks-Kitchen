@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 import * as motion from "motion/react-client";
 
 const Welcome = () => {
+  const features = [
+    { icon: ForkKnife, text: "Freshly Prepared", colSpan: "" },
+    { icon: ForkKnife, text: "Support Local Business", colSpan: "" },
+    { icon: Truck, text: "Fast & Reliable Delivery", colSpan: "sm:col-span-2" },
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -110,33 +116,18 @@ const Welcome = () => {
                   className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8"
                   variants={containerVariants}
                 >
-                  <motion.div
-                    className="flex items-center gap-2 font-semibold bg-[#F3F4F6] sm:bg-transparent p-3 sm:p-0 rounded-lg"
-                    variants={featureVariants}
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <img src={ForkKnife} alt="Fork and Knife" />
-                    <p className="text-sm">Freshly Prepared</p>
-                  </motion.div>
-                  <motion.div
-                    className="flex items-center gap-2 font-semibold bg-[#F3F4F6] sm:bg-transparent p-3 sm:p-0 rounded-lg"
-                    variants={featureVariants}
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <img src={ForkKnife} alt="Fork and Knife" />
-                    <p className="text-sm">Support Local Business</p>
-                  </motion.div>
-                  <motion.div
-                    className="flex items-center gap-2 font-semibold sm:col-span-2 bg-[#F3F4F6] sm:bg-transparent p-3 sm:p-0 rounded-lg"
-                    variants={featureVariants}
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <img src={Truck} alt="Truck" />
-                    <p className="text-sm">Fast & Reliable Delivery</p>
-                  </motion.div>
+                  {features.map((feature, index) => (
+                    <motion.div
+                      key={index}
+                      className={`flex items-center gap-2 font-semibold bg-[#F3F4F6] sm:bg-transparent p-3 sm:p-0 rounded-lg ${feature.colSpan}`}
+                      variants={featureVariants}
+                      whileHover={{ scale: 1.03 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <img src={feature.icon} alt={feature.text} />
+                      <p className="text-sm">{feature.text}</p>
+                    </motion.div>
+                  ))}
                 </motion.div>
 
                 <motion.div
