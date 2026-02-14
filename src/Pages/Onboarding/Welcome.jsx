@@ -95,7 +95,7 @@ const Welcome = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    to="/signup"
+                    to="/signin"
                     className="text-[#1E88E5] border-2 border-[#1E88E5] rounded-lg w-30 h-12 flex items-center justify-center text-center transition-colors hover:bg-[#1E88E5] hover:text-white duration-300"
                   >
                     Sign In
