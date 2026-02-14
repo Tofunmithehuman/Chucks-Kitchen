@@ -115,7 +115,7 @@ const Signin = () => {
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <motion.div
-              className="p-8 w-full mx-auto"
+              className="p-6 sm:p-8 w-full mx-auto"
               initial="hidden"
               animate="visible"
               variants={formContainerVariants}
@@ -233,7 +233,7 @@ const Signin = () => {
                     <div className="flex items-center justify-between gap-2">
                       <div className="border border-t border-[#EEF0F4] w-full"></div>
                       <motion.p
-                        className="text-xs my-4 w-full"
+                        className="text-xs my-4 w-full whitespace-nowrap"
                         variants={formItemVariants}
                       >
                         Or continue with
