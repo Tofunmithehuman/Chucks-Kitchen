@@ -3,6 +3,7 @@ import ForkKnife from "../../assets/ForkKnife.png";
 import Truck from "../../assets/Truck.png";
 import { Link } from "react-router-dom";
 import * as motion from "motion/react-client";
+import Footer from "../../Components/Footer";
 
 const Welcome = () => {
   const features = [
@@ -57,6 +58,8 @@ const Welcome = () => {
       },
     },
   };
+
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="Welcome inter">
@@ -155,10 +158,13 @@ const Welcome = () => {
                 </motion.div>
               </div>
 
-              <motion.div className="mt-auto" variants={itemVariants}>
+              <motion.div
+                className="mt-auto hidden md:block"
+                variants={itemVariants}
+              >
                 <div className="border border-t-2 border-[#F3F4F6]"></div>
                 <div className="flex items-center justify-center gap-4 mt-4 text-xs sm:text-sm py-4">
-                  <p>© 2024 Chuks Kitchen.</p>
+                  <p>© {currentYear} Chuks Kitchen.</p>
                   <motion.div whileHover={{ scale: 1.05 }}>
                     <Link className="text-[#64B5F6] hover:underline transition-all duration-200">
                       Privacy Policy
@@ -175,6 +181,7 @@ const Welcome = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
