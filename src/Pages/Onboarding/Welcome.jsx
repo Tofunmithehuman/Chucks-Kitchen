@@ -142,7 +142,7 @@ const Welcome = () => {
                     whileTap={{ scale: 0.98 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Link className="text-sm bg-[#FF7A18] w-full rounded-lg h-15 flex items-center justify-center text-center text-white font-semibold shadow-md hover:shadow-lg hover:bg-[#FF8C3A] transition-all duration-300">
+                    <Link className="text-sm bg-[#FF7A18] w-full rounded-lg h-15 flex items-center justify-center text-center text-white font-semibold hover:bg-[#FF8C3A] transition-all duration-300">
                       Start Your Order
                     </Link>
                   </motion.div>
