@@ -196,11 +196,9 @@ const Signin = () => {
                     className="my-2 text-right"
                     variants={formItemVariants}
                   >
-                    <motion.div whileHover={{ scale: 1.05 }}>
                       <Link className="text-xs text-[#1E88E5] hover:underline">
                         Forgot Password?
                       </Link>
-                    </motion.div>
                   </motion.div>
 
                   <motion.div
@@ -275,7 +273,7 @@ const Signin = () => {
                         whileHover={{ scale: 1.05 }}
                         className="inline-block"
                       >
-                        <Link className="ms-1 text-[#1E88E5] hover:underline">
+                        <Link to="/signup" className="ms-1 text-[#1E88E5] hover:underline">
                           Create an account
                         </Link>
                       </motion.span>
