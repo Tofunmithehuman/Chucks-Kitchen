@@ -147,7 +147,7 @@ const Signin = () => {
                       Email or phone number
                     </label>
                     <motion.div
-                      className="border-2 border-[#BDBDBD] rounded-md flex items-center mt-1"
+                      className="border border-[#BDBDBD] rounded-md flex items-center mt-1"
                       whileFocus={{ borderColor: "#FF7A18" }}
                       whileHover={{
                         borderColor: "#FF7A18",
@@ -158,7 +158,7 @@ const Signin = () => {
                       <input
                         type="email"
                         placeholder="name@gmail.com"
-                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-base"
+                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-xs"
                       />
                     </motion.div>
                   </motion.div>
@@ -168,7 +168,7 @@ const Signin = () => {
                       Password
                     </label>
                     <motion.div
-                      className="border-2 border-[#BDBDBD] rounded-md flex items-center mt-1"
+                      className="border border-[#BDBDBD] rounded-md flex items-center mt-1"
                       whileFocus={{ borderColor: "#FF7A18" }}
                       whileHover={{
                         borderColor: "#FF7A18",
@@ -179,7 +179,7 @@ const Signin = () => {
                       <input
                         type={showPassword ? "text" : "password"}
                         placeholder="******"
-                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-base"
+                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-xs"
                       />
                       <motion.img
                         src={showPassword ? visibility : visibilityOff}
