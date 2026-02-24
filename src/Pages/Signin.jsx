@@ -94,7 +94,7 @@ const Signin = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.h1
-                className="island-moments font-bold text-white text-5xl md:text-6xl lg:text-7xl mb-4 text-center"
+                className="island-moments font-bold text-white text-4xl md:text-5xl lg:text-6xl mb-4 text-center"
                 variants={textVariants}
                 initial="hidden"
                 animate="visible"
@@ -102,7 +102,7 @@ const Signin = () => {
                 Chuks Kitchen
               </motion.h1>
               <motion.p
-                className="jost text-white font-medium text-lg md:text-xl lg:text-2xl text-center max-w-lg leading-relaxed"
+                className="jost text-white font-medium text-md md:text-lg lg:text-xl text-center max-w-lg leading-relaxed"
                 variants={textVariants}
                 initial="hidden"
                 animate="visible"
@@ -122,7 +122,7 @@ const Signin = () => {
             >
               <motion.div className="mb-6" variants={formItemVariants}>
                 <motion.h1
-                  className="island-moments text-[#FF7A18] text-4xl mb-1 text-center"
+                  className="island-moments text-[#FF7A18] text-3xl mb-1 text-center"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
@@ -130,7 +130,7 @@ const Signin = () => {
                   Chuks Kitchen
                 </motion.h1>
                 <motion.p
-                  className="inter font-medium text-2xl text-center"
+                  className="inter font-medium text-xl text-center"
                   variants={formItemVariants}
                 >
                   Login your Account
@@ -158,12 +158,12 @@ const Signin = () => {
                       <input
                         type="email"
                         placeholder="name@gmail.com"
-                        className="outline-none border-none focus:outline-none focus:border-none h-12 ml-4 w-full text-[#3B4758] text-base"
+                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-base"
                       />
                     </motion.div>
                   </motion.div>
 
-                  <motion.div className="mt-4" variants={formItemVariants}>
+                  <motion.div className="mt-3" variants={formItemVariants}>
                     <label className="text-[#3B4758] text-xs font-medium">
                       Password
                     </label>
@@ -179,7 +179,7 @@ const Signin = () => {
                       <input
                         type={showPassword ? "text" : "password"}
                         placeholder="******"
-                        className="outline-none border-none focus:outline-none focus:border-none h-12 ml-4 w-full text-[#3B4758]"
+                        className="outline-none border-none focus:outline-none focus:border-none h-11 ml-4 w-full text-[#3B4758] text-base"
                       />
                       <motion.img
                         src={showPassword ? visibility : visibilityOff}
@@ -206,7 +206,7 @@ const Signin = () => {
                     variants={formContainerVariants}
                   >
                     <motion.button
-                      className="text-sm bg-[#FF7A18] w-full rounded-lg h-15 text-white font-semibold hover:bg-[#FF8C3A] transition-all duration-300 cursor-pointer"
+                      className="text-sm bg-[#FF7A18] w-full rounded-lg h-13 text-white font-semibold hover:bg-[#FF8C3A] transition-all duration-300 cursor-pointer"
                       variants={formItemVariants}
                       whileHover="hover"
                       whileTap="tap"
@@ -240,7 +240,7 @@ const Signin = () => {
                     </div>
 
                     <motion.button
-                      className="text-sm mb-4 bg-white border border-[#BDBDBD] w-full rounded-lg h-15 text-white font-semibold hover:bg-gray-50 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
+                      className="text-xs mb-4 bg-white border border-[#BDBDBD] w-full rounded-lg h-13 text-white font-semibold hover:bg-gray-50 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
                       variants={formItemVariants}
                       whileHover={{
                         scale: 1.02,
@@ -249,12 +249,12 @@ const Signin = () => {
                       }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <img src={google} alt="google" />
+                      <img src={google} className="w-4" alt="google" />
                       <p className="text-[#3B4758]">Continue with Google</p>
                     </motion.button>
 
                     <motion.button
-                      className="text-sm mb-8 bg-white border border-[#BDBDBD] w-full rounded-lg h-15 text-white font-semibold hover:bg-gray-50 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
+                      className="text-xs mb-8 bg-white border border-[#BDBDBD] w-full rounded-lg h-13 text-white font-semibold hover:bg-gray-50 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
                       variants={formItemVariants}
                       whileHover={{
                         scale: 1.02,
@@ -263,7 +263,7 @@ const Signin = () => {
                       }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <img src={facebook} alt="facebook" />
+                      <img src={facebook} className="w-2" alt="facebook" />
                       <p className="text-[#3B4758]">Continue with Facebook</p>
                     </motion.button>
 
