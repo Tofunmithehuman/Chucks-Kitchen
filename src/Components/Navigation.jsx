@@ -36,7 +36,7 @@ const Navigation = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="max-w-screen-2xl mx-auto px-4 py-3 md:p-6">
+        <div className="max-w-screen-xl mx-auto px-4 py-3 md:p-5">
           <div className="inter flex items-center justify-between">
             <nav>
               <motion.div
@@ -44,7 +44,7 @@ const Navigation = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Link to="/">
-                  <h1 className="island-moments text-[#FF7A18] text-4xl">
+                  <h1 className="island-moments text-[#FF7A18] text-3xl">
                     Chucks Kitchen
                   </h1>
                 </Link>
@@ -66,7 +66,7 @@ const Navigation = () => {
                     >
                       <Link
                         to={item.path}
-                        className="hover:text-[#FF7A18] transition-colors duration-200 font-medium"
+                        className="hover:text-[#FF7A18] transition-colors duration-200 font-medium text-sm"
                       >
                         {item.label}
                       </Link>
@@ -86,7 +86,7 @@ const Navigation = () => {
               >
                 <Link
                   to="/signin"
-                  className="bg-[#FF7A18] rounded-lg text-white px-8 py-3 font-semibold hover:bg-[#FF8C3A] transition-all duration-300 cursor-pointer inline-block"
+                  className="bg-[#FF7A18] rounded-lg text-white px-6 py-2 font-semibold hover:bg-[#FF8C3A] transition-all duration-300 cursor-pointer inline-block text-sm"
                 >
                   Login
                 </Link>
