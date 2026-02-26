@@ -36,7 +36,7 @@ const Navigation = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="max-w-screen-xl mx-auto px-4 py-3 md:p-5">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 md:p-5">
           <div className="inter flex items-center justify-between">
             <nav>
               <motion.div
