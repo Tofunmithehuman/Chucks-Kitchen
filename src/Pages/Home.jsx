@@ -72,7 +72,6 @@ const Home = () => {
     <div className="Home">
       <Navigation />
       <div className="inter">
-        {/* ── Hero Section ── */}
         <section
           className="relative w-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${Background})`, height: "90vh" }}
@@ -133,7 +132,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* ── Popular Categories ── */}
         <section className="bg-gray-100 py-16 px-6">
           <div className="max-w-6xl mx-auto">
             <motion.h1
@@ -179,7 +177,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* ── Chef's Specials ── */}
         <section className="bg-gray-100 py-16 px-6">
           <div className="max-w-6xl mx-auto">
             <motion.h1
@@ -238,7 +235,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* ── Bottom Banner ── */}
         <section
           className="relative w-full h-152 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${BottomBackground})` }}
